@@ -26,10 +26,10 @@ The principles underlying ECS are very simple:
 
 What makes ECS super interesting from the Deep Reinforcement Learning (DRL) point of view is that such a paradigm proposes a clear separation between data and functions, exactly has **we are used to do when manipulating neural networks**. Said otherwise, by using ECS, you can write the dynamics of your system through a computation graph (see Figure 1) of 'pure' functions (in the same spirit than JAX for instance). It opens all the possibilities of provided computation graphs (e.g JIT). More importantly, it allows to **put neural networks** everywhere in the game as we will show in future posts: not only to replace a player (bots), but also to enrich game data, to make/augment rendering, to do level generation, etc… (see Figure 2)
 
-![](video_games_and_deep_reinforcement_learning/assets/post1_fig2.png)
+![](https://github.com/video_games_and_deep_reinforcement_learning/docs/assets/post1_fig2.png)
 **Figure 1:** *An ECS implements a computation graph whose input is the World composed of Entities and Components.image_caption*
 
-![](video_games_and_deep_reinforcement_learning/assets/post1_fig3.png)
+![](https://github.com/video_games_and_deep_reinforcement_learning/docs/assets/post1_fig3.png)
 **Figure 2:** *ECS makes easy the use of neural networks to replace one or more systems in the game. It allows to deploy machine learning everywhere.*
 
 # GymECS: A simple ECS to replace gym environments
@@ -42,41 +42,41 @@ In this implementation, I will not focus on the execution speed of the framework
 
 A component is a simple container of data. A simple implementation is the following:
 
-![](video_games_and_deep_reinforcement_learning/assets/post1_component.png)
+![](https://github.com/video_games_and_deep_reinforcement_learning/docs/assets/post1_component.png)
 *The Component class*
 
 It makes use of the `setattr`, `hasattr` and `getattr` functions of Python to simplify the usage of the components. 
 
 As an example, a new component can be defined like this:
 
-![](video_games_and_deep_reinforcement_learning/assets/post1_position.png)
+![](https://github.com/video_games_and_deep_reinforcement_learning/docs/assets/post1_position.png)
 *The Position Component*
 
-![](video_games_and_deep_reinforcement_learning/assets/post1_action.png)
+![](https://github.com/video_games_and_deep_reinforcement_learning/docs/assets/post1_action.png)
 *The Action Component*
 
 and can be created like this:
 
-![](video_games_and_deep_reinforcement_learning/assets/post1_component_creation.png)
+![](https://github.com/video_games_and_deep_reinforcement_learning/docs/assets/post1_component_creation.png)
 *Creating Components*
 
 Similarly, it is possible to create an Entity class as:
-![](video_games_and_deep_reinforcement_learning/assets/post1_entity.png)
+![](https://github.com/video_games_and_deep_reinforcement_learning/docs/assets/post1_entity.png)
 *The Entity class*
 
 and to define new entities types (also called Archetypes in some other ECS libraries):
 
-![](video_games_and_deep_reinforcement_learning/assets/post1_agent.png)
+![](https://github.com/video_games_and_deep_reinforcement_learning/docs/assets/post1_agent.png)
 *The Agent Entity*
 
 We can then create the entity describing an agent as:
 
-![](video_games_and_deep_reinforcement_learning/assets/post1_agent_creation.png)
+![](https://github.com/video_games_and_deep_reinforcement_learning/docs/assets/post1_agent_creation.png)
 *Creating an agent is very simple...*
 
 Not that components can contain any type of information like big tensors for instance. In order to store our entities, we need to define a **World** class. We propose to just organize the entities in a simple dictionary for sake of simplicity.
 
-![](video_games_and_deep_reinforcement_learning/assets/post1_world.png)
+![](https://github.com/video_games_and_deep_reinforcement_learning/docs/assets/post1_world.png)
 *The World class (see github for full code)*
 
 ## Step 2: System
@@ -88,7 +88,7 @@ A **System** is just a function that:
   
 While it is possible to separate these step explicitly, we propose a very simple implementation as:
 
-![](video_games_and_deep_reinforcement_learning/assets/post1_system.png)
+![](https://github.com/video_games_and_deep_reinforcement_learning/docs/assets/post1_system.png)
 
 Note that the `reset` function is useful to control the stochasticity of the system (if stochastic) for reproducibility. It allows to have a fully deterministic system.
 
@@ -102,7 +102,7 @@ A game is composed of a **World** and **multiple Systems**. Similarly to openAI 
 
 The resulting implementation is the following:
 
-![](video_games_and_deep_reinforcement_learning/assets/post1_game.png)
+![](https://github.com/video_games_and_deep_reinforcement_learning/docs/assets/post1_game.png)
 *The Game class*
 
 Note that for simplicity, we are keeping the render function from gym. But actually, rendering could be handled by a system like any other, but producing pixels.
@@ -114,17 +114,17 @@ Now, let see how we can use these abstractions to define our first game. It will
 ### Defining Components and Entities
 
 We define all the information that capture the state of our game in components and entities. In our game, it is simply the position and action of the agent, and the map and size of the maze.
-![](video_games_and_deep_reinforcement_learning/assets/post1_game1.png)
+![](https://github.com/video_games_and_deep_reinforcement_learning/docs/assets/post1_game1.png)
 *Components and Entities for a simple maze game*
 
 ### Defining the needed systems
 
 In our case, we need two systems: the system to control the dynamics of the game, and the system to control the agent (aka the player)
 
-![](video_games_and_deep_reinforcement_learning/assets/post1_game2.png)
+![](https://github.com/video_games_and_deep_reinforcement_learning/docs/assets/post1_game2.png)
 *The move agent system*
 
-![](video_games_and_deep_reinforcement_learning/assets/post1_game3.png)
+![](https://github.com/video_games_and_deep_reinforcement_learning/docs/assets/post1_game3.png)
 *A random player*
 
 **Note that** there is not difference between the dynamics of the environment or the agent. Again, everything is a system. 
@@ -133,14 +133,14 @@ In our case, we need two systems: the system to control the dynamics of the game
 
 We just need to initialize the game in the `reset` function by creating the initial world. Then the `step` function is just executing the system that models the dynamics of our game. Note that we decide here to keep the player out of the game, but it could be perflectly included as one of the systems of the game. 
 
-![](video_games_and_deep_reinforcement_learning/assets/post1_game4.png)
+![](https://github.com/video_games_and_deep_reinforcement_learning/docs/assets/post1_game4.png)
 *The Maze game: the github contains also a rendering function*
 
 ### Running the game
 
 Now, we just have to run the game using a simple loop.
 
-![](video_games_and_deep_reinforcement_learning/assets/post1_game5.png)
+![](https://github.com/video_games_and_deep_reinforcement_learning/docs/assets/post1_game5.png)
 
 # Conclusion
 
