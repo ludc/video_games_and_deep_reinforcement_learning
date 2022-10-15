@@ -46,7 +46,7 @@ A component is a simple container of data. A simple implementation is the follow
 
 <p style="text-align: center;"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_component.png"/></p>
 
-<p align='center'><em>The Component class
+<p align='center'><em>The Component class</em></p>
 
 It makes use of the `setattr`, `hasattr` and `getattr` functions of Python to simplify the usage of the components. 
 
@@ -60,7 +60,6 @@ As an example, a new component can be defined like this:
 <p style="text-align: center;"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_action.png"/></p>
 
 <p align='center'><em>The Action Component</em></p>
-
 
 and can be created like this:
 
