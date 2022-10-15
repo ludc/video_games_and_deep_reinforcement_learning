@@ -26,11 +26,11 @@ The principles underlying ECS are very simple:
 
 What makes ECS super interesting from the Deep Reinforcement Learning (DRL) point of view is that such a paradigm proposes a clear separation between data and functions, exactly has **we are used to do when manipulating neural networks**. Said otherwise, by using ECS, you can write the dynamics of your system through a computation graph (see Figure 1) of 'pure' functions (in the same spirit than JAX for instance). It opens all the possibilities of provided computation graphs (e.g JIT). More importantly, it allows to **put neural networks** everywhere in the game as we will show in future posts: not only to replace a player (bots), but also to enrich game data, to make/augment rendering, to do level generation, etc… (see Figure 2)
 
-![](https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_fig2.png)
+<p align="center"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_fig2.png"/></p>
 
 **Figure 1:** *An ECS implements a computation graph whose input is the World composed of Entities and Components.image_caption*
 
-![](https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_fig3.png)
+<p align="center"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_fig3.png"/></p>
 
 **Figure 2:** *ECS makes easy the use of neural networks to replace one or more systems in the game. It allows to deploy machine learning everywhere.*
 
@@ -44,7 +44,7 @@ In this implementation, I will not focus on the execution speed of the framework
 
 A component is a simple container of data. A simple implementation is the following:
 
-![](https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_component.png)
+<p align="center"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_component.png"/></p>
 
 *The Component class*
 
@@ -52,40 +52,40 @@ It makes use of the `setattr`, `hasattr` and `getattr` functions of Python to si
 
 As an example, a new component can be defined like this:
 
-![](https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_position.png)
+<p align="center"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_position.png"/></p>
 
 *The Position Component*
 
-![](https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_action.png)
+<p align="center"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_action.png"/></p>
 
 *The Action Component*
 
 and can be created like this:
 
-![](https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_component_creation.png)
+<p align="center"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_component_creation.png"/></p>
 
 *Creating Components*
 
 Similarly, it is possible to create an Entity class as:
-![](https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_entity.png)
+<p align="center"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_entity.png"/></p>
 
 *The Entity class*
 
 and to define new entities types (also called Archetypes in some other ECS libraries):
 
-![](https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_agent.png)
+<p align="center"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_agent.png"/></p>
 
 *The Agent Entity*
 
 We can then create the entity describing an agent as:
 
-![](https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_agent_creation.png)
+<p align="center"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_agent_creation.png"/></p>
 
 *Creating an agent is very simple...*
 
 Not that components can contain any type of information like big tensors for instance. In order to store our entities, we need to define a **World** class. We propose to just organize the entities in a simple dictionary for sake of simplicity.
 
-![](https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_world.png)
+<p align="center"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_world.png"/></p>
 
 *The World class (see github for full code)*
 
@@ -98,7 +98,7 @@ A **System** is just a function that:
   
 While it is possible to separate these step explicitly, we propose a very simple implementation as:
 
-![](https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_system.png)
+<p align="center"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_system.png"/></p>
 
 Note that the `reset` function is useful to control the stochasticity of the system (if stochastic) for reproducibility. It allows to have a fully deterministic system.
 
@@ -112,7 +112,7 @@ A game is composed of a **World** and **multiple Systems**. Similarly to openAI 
 
 The resulting implementation is the following:
 
-![](https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_game.png)
+<p align="center"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_game.png"/></p>
 
 *The Game class*
 
@@ -125,7 +125,7 @@ Now, let see how we can use these abstractions to define our first game. It will
 ### Defining Components and Entities
 
 We define all the information that capture the state of our game in components and entities. In our game, it is simply the position and action of the agent, and the map and size of the maze.
-![](https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_game1.png)
+<p align="center"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_game1.png"/></p>
 
 *Components and Entities for a simple maze game*
 
@@ -133,13 +133,12 @@ We define all the information that capture the state of our game in components a
 
 In our case, we need two systems: the system to control the dynamics of the game, and the system to control the agent (aka the player)
 
-![](https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_game2.png)
+<p align="center"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_game2.png"/></p>
 
 *The move agent system*
 
-![](https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_game3.png)
+<p align="center"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_game3.png"/> A random player </p>
 
-*A random player*
 
 **Note that** there is not difference between the dynamics of the environment or the agent. Again, everything is a system. 
 
@@ -147,7 +146,7 @@ In our case, we need two systems: the system to control the dynamics of the game
 
 We just need to initialize the game in the `reset` function by creating the initial world. Then the `step` function is just executing the system that models the dynamics of our game. Note that we decide here to keep the player out of the game, but it could be perflectly included as one of the systems of the game. 
 
-![](https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_game4.png)
+<p align="center"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_game4.png"/></p>
 
 *The Maze game: the github contains also a rendering function*
 
@@ -155,7 +154,12 @@ We just need to initialize the game in the `reset` function by creating the init
 
 Now, we just have to run the game using a simple loop.
 
-![](https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_game5.png)
+<p align="center"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_game5.png"/></p>
+
+As an output (using the rendering function), you will see something like that:
+
+<p align="center"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_mazeimg.png"/></p>
+
 
 # Conclusion
 
