@@ -1,4 +1,4 @@
-theme: minima
+remote_theme: jekyll/minima
 title: Video Games and Deep Reinforcement Learning Blog
 author: Ludovic Denoyer
   
@@ -8,4 +8,3 @@ minima:
     github: ludc
 
 google_analytics: G-LNS72EZ5WE
-
