@@ -1,6 +1,8 @@
 remote_theme: jekyll/minima
 title: Video Games and Deep Reinforcement Learning Blog
-author: Ludovic Denoyer
+author: 
+ name: Ludovic Denoyer
+ email: ludovic.den@gmail.com
   
 minima:
   social_links:
