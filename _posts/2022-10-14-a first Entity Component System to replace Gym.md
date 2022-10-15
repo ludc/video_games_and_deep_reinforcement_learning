@@ -1,7 +1,3 @@
----
-layout: default
----
-
 
 **This post only expresses my own opinions and my personal thoughts** 
 
