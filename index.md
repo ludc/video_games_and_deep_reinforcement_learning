@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 
 <p style="text-align: center;"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/robot.png" width="100%"/></p>
 
