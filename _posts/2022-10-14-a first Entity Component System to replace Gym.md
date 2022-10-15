@@ -27,11 +27,7 @@ The principles underlying ECS are very simple:
 What makes ECS super interesting from the Deep Reinforcement Learning (DRL) point of view is that such a paradigm proposes a clear separation between data and functions, exactly has **we are used to do when manipulating neural networks**. Said otherwise, by using ECS, you can write the dynamics of your system through a computation graph (see Figure 1) of 'pure' functions (in the same spirit than JAX for instance). It opens all the possibilities of provided computation graphs (e.g JIT). More importantly, it allows to **put neural networks** everywhere in the game as we will show in future posts: not only to replace a player (bots), but also to enrich game data, to make/augment rendering, to do level generation, etc… (see Figure 2)
 
 <p align="center"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_fig2.png"/></p>
-<p align='center> 
-
-**Figure 1:** *An ECS implements a computation graph whose input is the World composed of Entities and Components.image_caption* 
-
-</p>
+<p align='center> <b>Figure 1:</b> <em>An ECS implements a computation graph whose input is the World composed of Entities and Components.image_caption</em></p>
 
 <p align="center"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_fig3.png"/></p>
 
