@@ -1,6 +1,9 @@
 remote_theme: jekyll/minima
   plugins:
     - jekyll-remote-theme
+plugins:
+  - jekyll-remote-theme
+
 title: Video Games and Deep Reinforcement Learning Blog
 author: 
  name: Ludovic Denoyer
