@@ -3,7 +3,10 @@ title: Video Games and Deep Reinforcement Learning Blog
 author: 
  name: Ludovic Denoyer
  email: ludovic.den@gmail.com
-  
+
+plugins:
+  - jekyll-remote-theme
+
 minima:
   social_links:
     twitter: LudovicDenoyer
