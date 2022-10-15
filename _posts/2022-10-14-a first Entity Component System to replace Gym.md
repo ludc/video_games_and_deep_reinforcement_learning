@@ -30,11 +30,11 @@ What makes ECS super interesting from the Deep Reinforcement Learning (DRL) poin
 
 <p style="text-align: center;"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_fig2.png" width="150%"/></p>
 
-<p align='center'> <b>Figure 1:</b> <em>An ECS implements a computation graph whose input is the World composed of Entities and Components.image_caption</em></p>
+<p align='center'> <b>Figure 1:</b> <em>An ECS implements a computation graph whose input is the World composed of Entities and Components. Multiple systems are executed (potentially in parallel) to update the state of the World. Only two abstractions are manipulated: World and Systems which makes everything easy.</em></p>
 
 <p style="text-align: center;"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_fig3.png" width="150%"/></p>
 
-<p align='center'> <b>Figure 2:</b><em>ECS makes easy the use of neural networks to replace one or more systems in the game. It allows to deploy machine learning everywhere.</em></p>
+<p align='center'> <b>Figure 2:</b><em>ECS greatly simplifies the use of neural networks that can easily replace one or more systems in the game. With ECS, machine learning methods can be deployed at different levels in the game.</em></p>
 
 # GymECS: A simple ECS to replace gym environments
 
