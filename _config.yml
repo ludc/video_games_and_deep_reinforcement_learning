@@ -1,7 +1,10 @@
+
+google_analytics: G-LNS72EZ5WE
+
 remote_theme: jekyll/minima
-  plugins:
-    - jekyll-remote-theme
+
 plugins:
+  - jekyll-feed
   - jekyll-remote-theme
 
 title: Video Games and Deep Reinforcement Learning Blog
@@ -16,4 +19,3 @@ minima:
     twitter: LudovicDenoyer
     github: ludc
 
-google_analytics: G-LNS72EZ5WE
