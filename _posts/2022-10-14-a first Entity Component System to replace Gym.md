@@ -1,4 +1,6 @@
 
+**This post only expresses my own opinions and my personal thoughts** 
+
 ## What is an ECS?
 
 An **ECS** (Entity-Component System) is a programming paradigm allowing the implementation of **complex dynamical systems**. It is more and more used in the video games industry due to its excellent characteristics:
