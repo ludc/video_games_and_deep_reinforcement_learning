@@ -44,7 +44,7 @@ We explain how ECS can be easily extended to handle 3D rendering (using the rayl
 
 * **October, 2022 (not published yet):** [Using GPU for fast computations in the ECS]()
 
-gymecs allows  to naturrally integrate processings mmades on GPU to drastically speed-up computations and speed-up game dynamics. We show how classical GPU librairies can be used in the ECS and provide an example using JAX.
+gymecs allows to naturraly integrate processings made on GPU to drastically speed-up computations and to speed-up game dynamics. We show how classical GPU librairies can be used in the ECS and provide an example using JAX allowin to have millions of frames per second (without rendering). 
 
 * **October, 2022 (not published yet):** [Integrating 3D Physics in the game]()
 
