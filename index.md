@@ -34,7 +34,7 @@ In this post, we show how are ECS can be casted as a gym environment, and vice-e
 </video></p>
 <p style="text-align: center;">openAI gym as a game in our ECS</p>
 
-* **October, 2022 (to come):** [Adding 3D rendering (with raylib)]()
+* **October, 2022 (to come):** [Adding 3D rendering with raylib]()
 
 We explain how ECS can be easily extended to handle 3D rendering (using the raylib library). 
 
@@ -42,11 +42,11 @@ We explain how ECS can be easily extended to handle 3D rendering (using the rayl
 </video></p>
 <p style="text-align: center;">The previous maze with 3D rendering</p>
 
-* **October, 2022 (to come):** [Using GPU for fast computations in the ECS]]()
+* **October, 2022 (to come):** [Using GPU for fast computations in the ECS]()
 
 gymecs allows  to naturrally integrate processings mmades on GPU to drastically speed-up computations and speed-up game dynamics. We show how classical GPU librairies can be used in the ECS and provide an example using JAX.
 
-* **October, 2022 (to come):** [Integrating 3D Physics in the game]]()
+* **October, 2022 (to come):** [Integrating 3D Physics in the game]()
 
 We explain how 3D physics can be integrated in the ECS by using the **Physx** library that works on multiple CPUs and GPUs. 
 
