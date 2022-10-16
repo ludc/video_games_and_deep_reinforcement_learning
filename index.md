@@ -6,16 +6,42 @@ The associated source code is [https://github.com/ludc/gymecs](https://github.co
 
 ## Posts
 
-* [Defining a pure python ECS, why is it good for Deep Reinforcement Learning?](https://ludc.github.io/video_games_and_deep_reinforcement_learning/2022/10/14/a-first-Entity-Component-System-to-replace-Gym.html)
+* **14th of October, 2022:** [Defining a pure python ECS, why is it good for Deep Reinforcement Learning?](https://ludc.github.io/video_games_and_deep_reinforcement_learning/2022/10/14/a-first-Entity-Component-System-to-replace-Gym.html)
 
 In this post, we give the basics of Entity Component Systems and show a simple implementation in Python. We then develop a simple 2D maze game as an example of use.
 
-<p style="text-align: center;"><video controls autoplay src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/index_maze.mkv" controls="controls" style="max-width: 640px;">
+<p style="text-align: center;"><video autoplay loop src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/index_maze.mkv" controls="controls" style="max-width: 640px;">
 </video></p>
-
 <p style="text-align: center;">The developped Maze Game</p>
 
-<p style="text-align: center;">
+* **October, 2022 (to come):** [Building bridges between gymecs and openAI Gym]()
+
+In this post, we show how are ECS can be casted as a gym environment, and vice-et-versa. We also discuss the advantage of the ECS w.r.t other deep RL environments libraries aka our ECS is **game-centrc** while classical libraries are **agent-centric**. `gymecs` is thus much more flexible and general. 
+
+<p style="text-align: center;"><video autoplay loop src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post2_video.mkv" controls="controls" style="max-width: 640px;">
+</video></p>
+<p style="text-align: center;">openAI gym as a game in our ECS</p>
+
+* **October, 2022 (to come):** [Adding 3D rendering (with raylib)]()
+
+We explain how ECS can be easily extended to handle 3D rendering (using the raylib library). 
+
+<p style="text-align: center;"><video autoplay loop src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/index_raylib.mkv" controls="controls" style="max-width: 640px;">
+</video></p>
+<p style="text-align: center;">The previous maze with 3D rendering</p>
+
+* **October, 2022 (to come):** [Using GPU for fast computations in the ECS]]()
+
+gymecs allows  to naturrally integrate processings mmades on GPU to drastically speed-up computations and speed-up game dynamics. We show how classical GPU librairies can be used in the ECS and provide an example using JAX.
+
+* **October, 2022 (to come):** [Integrating 3D Physics in the game]]()
+
+We explain how 3D physics can be integrated in the ECS by using the **Physx** library that works on multiple CPUs and GPUs. 
+
+<p style="text-align: center;"><video autoplay loop src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/index_physx.mkv" controls="controls" style="max-width: 640px;">
+</video></p>
+<p style="text-align: center;">The use of physx in the ECS</p>
+
 
 ## The author
 
