@@ -4,7 +4,7 @@ My objective is to publish a series of posts explaining how ECS can be leveraged
 
 The associated source code is [https://github.com/ludc/gymecs](https://github.com/ludc/gymecs) - Each blog post is associated with a branch of the github repository. 
 
-## Posts
+## Actual Posts
 
 * **14th of October, 2022:** [Defining a pure python ECS, why is it good for Deep Reinforcement Learning?](https://ludc.github.io/video_games_and_deep_reinforcement_learning/2022/10/14/a-first-Entity-Component-System-to-replace-Gym.html)
 
@@ -13,6 +13,8 @@ In this post, we give the basics of Entity Component Systems and show a simple i
 <p style="text-align: center;"><video autoplay loop src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/index_maze.mkv" controls="controls" style="max-width: 640px;">
 </video></p>
 <p style="text-align: center;">The developped Maze Game</p>
+
+## Future Posts
 
 * **October, 2022 (to come):** [Building bridges between gymecs and openAI Gym]()
 
