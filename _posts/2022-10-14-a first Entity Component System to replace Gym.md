@@ -174,6 +174,10 @@ As an output (using the rendering function), you will see something like that:
 
 <p style="text-align: center;"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_mazeimg.png"/></p>
 
+<video src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post1_video.mkv" controls="controls" style="max-width: 730px;">
+</video>
+
+
 
 # Conclusion
 
