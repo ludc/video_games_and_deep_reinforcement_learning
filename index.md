@@ -2,7 +2,7 @@
 
 My objective is to publish a series of posts explaining how ECS can be leveraged **to bridge video game programming and deep (reinforcement) learning**. The articles are structured to progressively demonstrate how an ECS can be developed 'from scratch' in python and integrated with classical DRL tools, resulting in a **powerful learning platform** associated to **complex and beautiful games**. 
 
-The associated source code is [https://github.com/ludc/gymecs](https://github.com/ludc/gymecs) - Each blog post is associated with a branch of the github repository. 
+The **associated source code** is [https://github.com/ludc/gymecs](https://github.com/ludc/gymecs) - Each blog post is associated with a branch of the github repository. The main branch corresponds to the last posted article.
 
 ### The author
 
