@@ -14,7 +14,7 @@ The associated source code is [https://github.com/ludc/gymecs](https://github.co
 **This blog only expresses my own opinions and my personal thoughts** 
 
 
-## Actual Posts
+## Posts
 
 * **14th of October, 2022:** [Defining a pure python ECS, why is it good for Deep Reinforcement Learning?](https://ludc.github.io/video_games_and_deep_reinforcement_learning/2022/10/14/a-first-Entity-Component-System-to-replace-Gym.html)
 
@@ -24,7 +24,7 @@ In this post, we give the basics of Entity Component Systems and show a simple i
 </video></p>
 <p style="text-align: center;">The developped Maze Game</p>
 
-## Future Posts
+#### Future Posts
 
 * **October, 2022 (to come):** [Building bridges between gymecs and openAI Gym]()
 
