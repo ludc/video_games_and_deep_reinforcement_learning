@@ -1,6 +1,8 @@
 
 **This post only expresses my own opinions and my personal thoughts** 
 
+Feel free to send comments and/or like on [Twitter over this post](https://twitter.com/LudovicDenoyer/status/1581907808718852096)
+
 ## What is an ECS?
 
 An **ECS** (Entity-Component System) is a programming paradigm allowing the implementation of **complex dynamical systems**. It is more and more used in the video games industry due to its excellent characteristics:
@@ -185,4 +187,4 @@ If you look at the previous implementation, as a first advantage, you see the cl
  
 In the next posts, I will explain how these simple principles can be used to do reinforcement learning on games much more complex than what we are used to manipulate in academic research. I will slowly make the ECS evolve toward a **3D distributed engine working on GPU** and allowing to implement multiplayer games, but also toward a real **deep reinforcement learning** sandbox. 
 
-Let's keep in touch, feel free to send comments on [Twitter over this post](...)
+Let's keep in touch, feel free to send comments on [Twitter over this post](https://twitter.com/LudovicDenoyer/status/1581907808718852096)

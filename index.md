@@ -2,6 +2,8 @@
 
 My objective is to publish a series of posts explaining how ECS can be leveraged **to bridge video game programming and deep (reinforcement) learning**. The articles are structured to progressively demonstrate how an ECS can be developed 'from scratch' in python and integrated with classical DRL tools, resulting in a **powerful learning platform** associated to **complex and beautiful games**. 
 
+The choise has been made to make everything full python (Linux, Windows and MacOS), even if is not reaching the 3D rendering quality obtained by C, C++ or Rust. On the other side, since integration of deep learning models will be easy, we will obtain a strong AI-oriented game framework, together with a nice experimental platform for DRL research. 
+
 The **associated source code** is [https://github.com/ludc/gymecs](https://github.com/ludc/gymecs) - Each blog post is associated with a branch of the github repository. The main branch corresponds to the last posted article.
 
 ### The author
