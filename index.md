@@ -26,7 +26,6 @@ In this post, we give the basics of Entity Component Systems and show a simple i
 </video></p>
 <p style="text-align: center;">The developped Maze Game</p>
 
-### Future Posts
 
 * **20th of October, 2022:** [Building bridges between gymecs and openAI Gym](https://ludc.github.io/video_games_and_deep_reinforcement_learning/2022/10/22/From-gymECS-to-openAI-gym-and-vice-et-versa.html)
 
@@ -39,6 +38,10 @@ In this post, we show how are ECS can be casted as a gym environment, and vice-e
 <p style="text-align: center;"><video autoplay loop src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post2_multiagent_video.mkv" controls="controls" style="max-width: 640px;">
 </video></p>
 <p style="text-align: center;">The Multiagent with Goal Game can be casted as a gym environment in many ways ! </p>
+
+### Future Posts
+
+
 
 * **October, 2022 (not published yet):** [Adding 3D rendering with raylib]()
 
