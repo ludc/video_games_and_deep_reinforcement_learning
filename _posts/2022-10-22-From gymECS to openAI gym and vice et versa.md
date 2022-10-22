@@ -31,7 +31,7 @@ The agent information is defined as follows:
 
 For the game state, we will include the `done` information, but also the timestep of the game. Since the ECS exposes all the data, the `gym.Env` is also contained in the `World` as a `GameEnv` component that makes it usable by system.
 
-<p style="text-align: center;"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post2_game.png" width="80%"/></p>
+<p style="text-align: center;"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post2_game.png" width="50%"/></p>
 
 <p align='center'> <em>The components and entity to describe a game state</em></p>
 
