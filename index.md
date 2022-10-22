@@ -47,7 +47,7 @@ In this post, we show how are ECS can be casted as a gym environment, and vice-e
 
 We explain how ECS can be easily extended to handle 3D rendering (using the raylib library). 
 
-<p style="text-align: center;"><video autoplay loop src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/index_raylib.mkv" controls="controls" style="max-width: 640px;">
+<p style="text-align: center;"><video autoplay loop src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post4_videomaze.mkv" controls="controls" style="max-width: 640px;">
 </video></p>
 <p style="text-align: center;">The previous maze with 3D rendering</p>
 
