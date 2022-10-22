@@ -1,4 +1,3 @@
-# Building a bridge betweem gymECS and openAI gym
 
 ## (Note from the previous post)
 
@@ -26,13 +25,13 @@ To describe the state of a gym environment, we use two entites: `Agent` that con
 
 The agent information is defined as follows:
 
-<p style="text-align: center;"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post2_agent.png" width="150%"/></p>
+<p style="text-align: center;"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post2_agent.png" width="80%"/></p>
 
 <p align='center'> <em>The components and entity to describe an agent in a gym environment</em></p>
 
 For the game state, we will include the `done` information, but also the timestep of the game. Since the ECS exposes all the data, the `gym.Env` is also contained in the `World` as a `GameEnv` component that makes it usable by system.
 
-<p style="text-align: center;"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post2_game.png" width="150%"/></p>
+<p style="text-align: center;"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post2_game.png" width="80%"/></p>
 
 <p align='center'> <em>The components and entity to describe a game state</em></p>
 
@@ -74,7 +73,7 @@ The final loop to test our game is the following:
 
 ### A few words
 
-It is very simple to cast any gym environment to a `gymecs.Game`. A similar wrapper can be easily made for other interfaces like deepmind lab for instance. gymecs thus provides a unified API for dynamical systems, making my life much easier ! 
+It is very simple  to cast any gym environment to a `gymecs.Game`. A similar wrapper can be easily made for other interfaces like deepmind lab for instance. gymecs thus provides a unified API for dynamical systems, making my life much easier ! 
 
 ## From gymECS to openAI gym
 
@@ -87,13 +86,13 @@ To move from the **system centric** to the **agent centric** point of view (from
 ### The Maze Game
 To convert our simple maze game to a gym environments, we first define the following class and abstract methods:
 
-<p style="text-align: center;"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post2_togym1.png" width="150%"/></p>
+<p style="text-align: center;"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post2_togym1.png" width="80%"/></p>
 <p align='center'> <em>The gym.Env class to capture a game as a gym environments (see complete code in togym.py)</em></p>
 
 Then, a maze game can be matched to a gym environment as follows:
 
 For that, we define the follwing class and abstract methods:
-<p style="text-align: center;"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post2_togym2.png" width="150%"/></p>
+<p style="text-align: center;"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post2_togym2.png" width="100%"/></p>
 <p align='center'> <em>Casting our Maze as a gym environment. The observation will be the X,Y position of the agent.</em></p>
 
 To execute this example: `python gymecs\gymecs\togym.py`

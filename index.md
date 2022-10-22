@@ -28,7 +28,7 @@ In this post, we give the basics of Entity Component Systems and show a simple i
 
 ### Future Posts
 
-* **October, 2022 (not published yet):** [Building bridges between gymecs and openAI Gym]()
+* **20th of October, 2022:** [Building bridges between gymecs and openAI Gym](https://ludc.github.io/video_games_and_deep_reinforcement_learning/2022/10/22/From-gymECS-to-openAI-gym-and-vice-et-versa.html)
 
 In this post, we show how are ECS can be casted as a gym environment, and vice-et-versa. We also discuss the advantage of the ECS w.r.t other deep RL environments libraries aka our ECS is **game-centrc** while classical libraries are **agent-centric**. `gymecs` is thus much more flexible and general. 
 
