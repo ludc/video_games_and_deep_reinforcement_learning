@@ -25,7 +25,7 @@ To describe the state of a gym environment, we use two entites: `Agent` that con
 
 The agent information is defined as follows:
 
-<p style="text-align: center;"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post2_agent.png" width="80%"/></p>
+<p style="text-align: center;"><img  src="https://github.com/ludc/video_games_and_deep_reinforcement_learning/raw/main/docs/assets/post2_agent.png" width="50%"/></p>
 
 <p align='center'> <em>The components and entity to describe an agent in a gym environment</em></p>
 
