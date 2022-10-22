@@ -73,10 +73,9 @@ The final loop to test our game is the following:
 
 ### A few words
 
-It is very simple  to cast any gym environment to a `gymecs.Game`. A similar wrapper can be easily made for other interfaces like deepmind lab for instance. gymecs thus provides a unified API for dynamical systems, making my life much easier ! 
+It is very simple  to cast any gym environment to a `gymecs.Game` and we provide a generic wrapper. A similar wrapper can be easily made for other interfaces like deepmind lab for instance. gymecs thus provides a unified API for dynamical systems, making my life much easier ! But gymECS can represent dynamical systems much more complex than **agent centric** frameworks. 
 
 ## From gymECS to openAI gym
-
 
 The reverse path from the ECS to gym is the most interesting property. Indeed, as stated before, gymECS is **system centric** while many RL frameworks including openAI gym are **agent centric**. But in a game, we may want to control different stuffs, not only a single agent: a bot, a part of the game logics, multiple bots at once, etc.... gymECS allows to do that, but not openAI gym.
 
