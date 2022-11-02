@@ -39,11 +39,8 @@ In this post, we show how are ECS can be casted as a gym environment, and vice-e
 </video></p>
 <p style="text-align: center;">The Multiagent with Goal Game can be casted as a gym environment in many ways ! </p>
 
-### Future Posts
 
-
-
-* **November, 2022:** [Adding 3D rendering with raylib](https://ludc.github.io/video_games_and_deep_reinforcement_learning/2022/10/22/https://ludc.github.io/video_games_and_deep_reinforcement_learning/2022/11/01/3D-Rendering-with-raylib.html)
+* **November, 2022:** [Adding 3D rendering with raylib](https://ludc.github.io/video_games_and_deep_reinforcement_learning/2022/11/01/3D-Rendering-with-raylib.html)
 
 We explain how ECS can be easily extended to handle 3D rendering (using the raylib library). 
 
@@ -51,9 +48,13 @@ We explain how ECS can be easily extended to handle 3D rendering (using the rayl
 </video></p>
 <p style="text-align: center;">The previous maze with 3D rendering</p>
 
-* **November, 2022 (not published yet):** [Using GPU for fast computations in the ECS](https://ludc.github.io/video_games_and_deep_reinforcement_learning/2022/10/31/Using-GPU-computations-in-gymECS.html)
+
+* **November, 2022:** [Using GPU for fast computations in the ECS](https://ludc.github.io/video_games_and_deep_reinforcement_learning/2022/10/31/Using-GPU-computations-in-gymECS.html)
 
 gymecs allows to naturraly integrate processings made on GPU to drastically speed-up computations and to speed-up game dynamics. We show how classical GPU librairies can be used in the ECS and provide an example using JAX allowin to have millions of frames per second (without rendering). 
+
+### Future Posts
+
 
 * **November, 2022 (not published yet):** [Integrating 3D Physics in the game]()
 
